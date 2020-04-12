@@ -2,12 +2,6 @@
 
 To create actions using `flutter` command you can use this action
 
-## Inputs
-no inputs
-
-## Outputs
-test
-
 ## Example usage
 
 ```
