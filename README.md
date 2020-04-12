@@ -1,6 +1,6 @@
 # Flutter latest docker action
 
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log.
+To create actions using `flutter` command you can use this action
 
 ## Inputs
 no inputs
@@ -10,6 +10,21 @@ test
 
 ## Example usage
 
-uses: actions/hello-world-docker-action@v1
-with:
-  who-to-greet: 'Mona the Octocat'
+```
+jobs:
+  build:
+    name: run testing
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: install dependencies
+      uses: geowatson/flutter-latest@1.0.0
+      with:
+        args: pub get
+
+    - name: run tests
+      uses: geowatson/flutter-latest@1.0.0
+      with:
+        args: test
+```
