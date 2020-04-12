@@ -1,5 +1,5 @@
-name: 'Flutter Test'
-description: 'Test Flutter projects easily'
+name: 'Flutter Latest'
+description: 'Use latest flutter in action!'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
